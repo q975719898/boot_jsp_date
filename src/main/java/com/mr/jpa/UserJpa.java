@@ -12,8 +12,8 @@ import org.springframework.data.repository.query.Param;
  * Created by czl on 2018/6/2.
  */
 public interface UserJpa extends CrudRepository<User,Integer>{
-
-  /*  @Modifying
+/*
+   @Modifying
     @Query("UPDATE user u set u.user_name=user1.userName,u.user_age=user1.userAge,u.user_bir=user1.userBir WHERE u.user_id =user1.userId")
-    void updateById( @Param("user1") User user);*/
+    void updateByUser( @Param("user1") User user1);*/
 }

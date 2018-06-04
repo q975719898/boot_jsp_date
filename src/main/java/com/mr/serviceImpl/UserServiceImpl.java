@@ -49,6 +49,7 @@ public class UserServiceImpl implements UserService {
     @Transactional
     @Override
     public void updateUser(User user) {
-
+       /* userJpa.updateByUser(user);*/
+        userJpa.save(user);
     }
 }
